@@ -11,8 +11,9 @@ The Flask app is initialized in the `create_app` method of [this file](library/_
 
 1. Install Docker through the Docker website
 2. Once installed, run the docker program. You should see a small whale carrying cargo containers in your Mac menu bar
-3. Change into the `library-flask` directory in your terminal
+3. Change into this `library-flask` directory in your terminal
 4. Issue `docker-compose up -d`
-5. Run all the commands in ./bin/init-local-db.  This will also seed some fake data.  The data it seeds lives in [this file](library/commands.py)
+5. Wait for a minute or two while the db gets up and running.
+6. Run `docker-compose exec web flask db upgrade` and then `docker-compose exec web flask seed`.  This will migrate the db and seed some fake data.  The data it seeds lives in [this file](library/commands.py)
 
 The backend is hosted locally on port 5000 and you can access the API by hitting http://localhost:5000/api/[your_api_endpoint]
