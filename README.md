@@ -18,6 +18,6 @@ The Flask app is initialized in the `create_app` method of [this file](library/_
 
 ## Testing
 
-**Note**:I have used `requested_at` instead of `timestamp`, and `book_id` instead of `id` for the request responses to be more clear (since I have other fields in that model that these could be confused with if I had gone with the generic names).
+**Note**: I have used `requested_at` instead of `timestamp`, and `book_id` instead of `id` for the request responses to be more clear (since I have other fields in that model that these could be confused with if I had gone with the generic names).
 
 The backend is hosted locally on port 5000 and you can access the API by hitting http://localhost:5000/api/[your_api_endpoint]
