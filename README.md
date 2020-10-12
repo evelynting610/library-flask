@@ -4,7 +4,7 @@ Simple Flask API to retrieve information about book requests.
 ## Stack
 
 This app has a postgresql db and a flask API.  Both run on docker.
-All the Flask code lives in the library folder of this repo.
+All the Flask code lives in the library folder of this repo, and the meat of the api call definitions live in [this file](library/views.py).
 The Flask app is initialized in the `create_app` method of [this file](library/__init__.py) in the library folder
 
 ## Steps to Run Locally
