@@ -1,7 +1,5 @@
 FROM python:3.7
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt-get install -y nodejs
-
 RUN pip install --user -q pip
 
 COPY ./ /app
