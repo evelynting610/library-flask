@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -rf ./postgres-data &&
+echo "Local database deleted."
