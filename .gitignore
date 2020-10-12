@@ -1,12 +1,10 @@
-# front end files
-front_end/node_modules
-front_end/dist
-front_end/coverage
-
 # server files
 *__pycache__*
 *.pyc
 *.pytest_cache
+
+# data
+postgres-data
 
 # IDE
 .vscode
